@@ -11,5 +11,6 @@ function FindProxyForURL(url, host) {
 	if (shExpMatch(url, "*://aws.amazon.com/*")) return 'PROXY 127.0.0.1:8087';
 	if (shExpMatch(url, "*://*.ggpht.com/*") || shExpMatch(url, "*://ggpht.com/*")) return 'PROXY 127.0.0.1:8087';
 	if (shExpMatch(url, "*://*.gstatic.com/*") || shExpMatch(url, "*://gstatic.com/*")) return 'PROXY 127.0.0.1:8087';
+	if (shExpMatch(url, "*://*.ytimg.com/*") || shExpMatch(url, "*://ytimg.com/*")) return 'PROXY 127.0.0.1:8087';
 	return 'DIRECT';
 }
