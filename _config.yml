@@ -1,0 +1,4 @@
+name: Yux
+markdown: redcarpet
+pygments: true
+encoding : utf-8
