@@ -6,7 +6,6 @@ category : blog
 
 源码的`android.provider.Telephony`类包含了有关短信操作的内容。
 这个类中有一个内部类`Conversations`, 它包含了一些短信分组的信息:
-
 {% highlight java linenos %}
 public static final class Conversations
         implements BaseColumns, TextBasedSmsColumns {
@@ -38,6 +37,7 @@ public static final class Conversations
 
 通过"content://sms/conversations"查询的时候, 返回的数据包括3个字段, 分别是:`thread_id`,`msg_count`和`snippet`. 
 `thread_id`每组短信都有一个唯一ID,通过这个ID可以查找电话号码的其他信息; `msg_count`是这组短信的数量;`snippet`是短信摘要;
+
 
 一个Demo
 {% highlight java linenos %}
