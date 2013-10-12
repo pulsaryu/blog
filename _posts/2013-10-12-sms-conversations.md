@@ -5,8 +5,8 @@ category : blog
 ---
 
 源码的`android.provider.Telephony`类包含了有关短信操作的内容。
-
 这个类中有一个内部类`Conversations`, 它包含了一些短信分组的信息:
+
 {% highlight java linenos %}
 public static final class Conversations
         implements BaseColumns, TextBasedSmsColumns {
