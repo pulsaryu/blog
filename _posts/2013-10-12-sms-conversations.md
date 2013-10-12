@@ -39,6 +39,7 @@ public static final class Conversations
 `thread_id`每组短信都有一个唯一ID,通过这个ID可以查找电话号码的其他信息; `msg_count`是这组短信的数量;`snippet`是短信摘要;
 
 
+
 一个Demo
 {% highlight java linenos %}
 Uri uri = Uri.parse("content://sms/conversations");
