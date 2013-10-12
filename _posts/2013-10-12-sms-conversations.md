@@ -2,6 +2,7 @@
 layout : post
 title : 读取短信分组
 category : blog
+tags : Android - 短信
 ---
 
 源码的`android.provider.Telephony`类包含了有关短信操作的内容。
