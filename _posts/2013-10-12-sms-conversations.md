@@ -7,7 +7,7 @@ title : Sms Conversations
 源码的`android.provider.Telephony`类包含了有关短信操作的内容。
 
 这个类中有这么一个类
-```java
+{% highlight java %}
 public static final class Conversations
         implements BaseColumns, TextBasedSmsColumns {
     /**
@@ -33,4 +33,4 @@ public static final class Conversations
      */
     public static final String MESSAGE_COUNT = "msg_count";
 }
-```
+{% endhighlight %}
