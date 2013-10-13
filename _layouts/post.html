@@ -3,9 +3,9 @@ layout : default
 ---
 <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
     <h1 class="title" itemprop="name">{{page.title}}</h1>
+    <div class="date">{{ page.date | date : "%Y-%m-%d" }}</div>
     <div class="entry-content" itemprop="articleBody">
         {{content}}
-    </p>
     </div>
     {% include disqus.html %}
 </article>
