@@ -9,7 +9,7 @@ title : 博客
         <hr>
         <p>
             <span class="glyphicon glyphicon-time"></span>
-            { post.date | date : "%Y-%m-%d" }}
+            {{ post.date | date : "%Y-%m-%d" }}
         </p>
         <hr>
         <p>{{ post.excerpt }}</p>
@@ -18,5 +18,6 @@ title : 博客
         </a>
     </div>
     <hr>
+    <p></p>
     {% endfor %}
 </div>
