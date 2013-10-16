@@ -6,11 +6,17 @@ title : 博客
     {% for post in site.posts %}
     <div class="post">
         <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <div class="date">{{ post.date | date : "%Y-%m-%d" }}</div>
+        <hr>
+        <p>
+            <span class="glyphicon glyphicon-time"></span>
+            { post.date | date : "%Y-%m-%d" }}
+        </p>
+        <hr>
         <p>{{ post.excerpt }}</p>
         <a href="{{ post.url }}" class="btn btn-primary">继续阅读
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
     </div>
+    <hr>
     {% endfor %}
 </div>
