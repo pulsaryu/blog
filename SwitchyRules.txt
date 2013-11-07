@@ -7,6 +7,20 @@
 [wildcard]
 *://*.facebook.com/*
 *://twitter.com/*
+*://*.cgoogleusercontent.com/*
+*://*.youtube.com/*
+*://*.ytimg.com/*
+*://*.gstatic.com/*
+*://*.ggpht.com/*
+*://*.googlesource.com/*
+*://*.googlecode.com/*
+*://*.googleusercontent.com/*
+*://*.blogspot.com/*
+*://*.blogger.com/*
+*://*.google-analytics.com/*
+*://*.fbcdn.net/*
+*://*.git-scm.com/
+*://*.sstatic.net/*
 
 [regexp]
 
