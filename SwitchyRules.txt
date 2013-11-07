@@ -12,6 +12,7 @@
 *://*.ytimg.com/*
 *://*.gstatic.com/*
 *://*.ggpht.com/*
+*://*.google.com/*
 *://*.googlesource.com/*
 *://*.googlecode.com/*
 *://*.googleapis.com/*
