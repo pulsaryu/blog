@@ -13,10 +13,7 @@
 *://*.gstatic.com/*
 *://*.ggpht.com/*
 *://*.google.com/*
-*://*.googlesource.com/*
-*://*.googlecode.com/*
-*://*.googleapis.com/*
-*://*.googleusercontent.com/*
+*://*.google*.com/*
 *://*.blogspot.com/*
 *://*.blogger.com/*
 *://*.google-analytics.com/*
