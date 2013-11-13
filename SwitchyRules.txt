@@ -1,23 +1,19 @@
-; Summary: Proxy Switchy! Exported Rule List
-; Date: 2013年11月7日
-; Website: http://bit.ly/proxyswitchy
-
 #BEGIN
 
 [wildcard]
-*://*.facebook.com/*
-*://twitter.com/*
-*://*.cgoogleusercontent.com/*
+*://*.google.com/*
+*://*.google*.com/*
 *://*.youtube.com/*
 *://*.ytimg.com/*
 *://*.gstatic.com/*
 *://*.ggpht.com/*
-*://*.google.com/*
-*://*.google*.com/*
+*://*.facebook.com/*
+*://*.fbcdn.net/*
+*://twitter.com/*
+*://*.twitter.com/*
+*://*.cgoogleusercontent.com/*
 *://*.blogspot.com/*
 *://*.blogger.com/*
-*://*.google-analytics.com/*
-*://*.fbcdn.net/*
 *://*.git-scm.com/
 *://*.sstatic.net/*
 
