@@ -11,10 +11,11 @@
 *://*.fbcdn.net/*
 *://twitter.com/*
 *://*.twitter.com/*
+*://*.xda-developers.com/*
 *://*.cgoogleusercontent.com/*
 *://*.blogspot.com/*
 *://*.blogger.com/*
-*://*.git-scm.com/
+*://*.git-scm.com/*
 *://*.sstatic.net/*
 
 [regexp]
