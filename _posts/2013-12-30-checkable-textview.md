@@ -40,3 +40,28 @@ public class CheckedTextView extends TextView implements Checkable {
     }
 }
 {% endhighlight %}
+
+创建 OnCheckedChangeListener 接口
+{% highlight java %}
+public static interface OnCheckedChangeListener {
+    public void onCheckedChanged(CheckedTextView view, boolean checked);
+}
+{% endhighlight %}
+实现 OnCheckedChangeListener 接口
+{% highlight java %}
+private OnCheckedChangeListener mOnCheckedChangeListener;
+
+@Override
+public void setChecked(boolean checked) {
+    if (mIsChecked != checked) {
+        mIsChecked = checked;
+        if (mOnCheckedChangeListener != null) {
+            mOnCheckedChangeListener.onCheckedChanged(this, checked);
+        }
+    }
+}
+
+public void setOnCheckedChangeListener (OnCheckedChangeListener listener) {
+    mOnCheckedChangeListener = listener;
+}
+{% endhighlight %}
