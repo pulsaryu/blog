@@ -7,7 +7,6 @@ category: blog
 自定义创建CheckedTextView, 实现checkable, 并增加 OnCheckedChangeListener (这个源代码的CheckedTextView可以是没有的).
 
 首先是实现 Checkable, 这个比较简单.
-<code>
 {% highlight java %}
 public class CheckedTextView extends TextView implements Checkable {
 
@@ -41,7 +40,6 @@ public class CheckedTextView extends TextView implements Checkable {
     }
 }
 {% endhighlight %}
-</code>
 
 创建 OnCheckedChangeListener 接口
 {% highlight java %}
