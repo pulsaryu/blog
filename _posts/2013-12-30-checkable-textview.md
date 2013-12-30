@@ -77,7 +77,7 @@ private static final int[] CHECKED_STATE_SET = {
 };
 {% endhighlight %}
 
-修改`onCreateDrawableState`方法:
+覆盖父类`onCreateDrawableState`方法:
 {% highlight java %}
 @Override
 protected int[] onCreateDrawableState(int extraSpace) {
@@ -94,7 +94,7 @@ protected int[] onCreateDrawableState(int extraSpace) {
 public void setChecked(boolean checked) {
     if (mIsChecked != checked) {
         mIsChecked = checked;
-        refreshDrawableState();
+        __refreshDrawableState();__
         if (mOnCheckedChangeListener != null) {
             mOnCheckedChangeListener.onCheckedChanged(this, checked);
         }
