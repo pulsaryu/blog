@@ -94,7 +94,7 @@ protected int[] onCreateDrawableState(int extraSpace) {
 public void setChecked(boolean checked) {
     if (mIsChecked != checked) {
         mIsChecked = checked;
-        __refreshDrawableState();__
+        refreshDrawableState();
         if (mOnCheckedChangeListener != null) {
             mOnCheckedChangeListener.onCheckedChanged(this, checked);
         }
