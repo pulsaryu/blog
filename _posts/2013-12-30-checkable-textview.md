@@ -65,3 +65,39 @@ public void setOnCheckedChangeListener (OnCheckedChangeListener listener) {
     mOnCheckedChangeListener = listener;
 }
 {% endhighlight %}
+
+接下来实现自动刷新背景图片, 也就是当TextView的isChecked()返回true的时候, 背景图片能够自动更换为选中的图层, 
+当然前提是你已经定义了. 
+
+
+首先创建Checked状态数组:
+{% highlight java%}
+private static final int[] CHECKED_STATE_SET = {
+        android.R.attr.state_checked
+};
+{% endhighlight %}
+
+修改`onCreateDrawableState`方法:
+{% highlight java %}
+@Override
+protected int[] onCreateDrawableState(int extraSpace) {
+    final int[] drawableState = super.onCreateDrawableState(extraSpace + 1);
+    if (isChecked()) {
+        mergeDrawableStates(drawableState, CHECKED_STATE_SET);
+    }
+    return drawableState;
+}
+{% endhighlight %}
+最后修改`setChecked`方法:
+{% highlight java %}
+@Override
+public void setChecked(boolean checked) {
+    if (mIsChecked != checked) {
+        mIsChecked = checked;
+        refreshDrawableState();
+        if (mOnCheckedChangeListener != null) {
+            mOnCheckedChangeListener.onCheckedChanged(this, checked);
+        }
+    }
+}
+{% endhighlight %}
