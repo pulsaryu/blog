@@ -10,4 +10,4 @@ title: FixedGridLayout
 
 源码:<script src="https://gist.github.com/yuxing1171/8194396.js"></script>
 
-!(https://dl.dropboxusercontent.com/u/38576266/images/2013-12-31%2017.49.30.jpg)
+![](https://dl.dropboxusercontent.com/u/38576266/images/2013-12-31%2017.49.30.jpg)
