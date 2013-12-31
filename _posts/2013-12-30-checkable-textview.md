@@ -88,7 +88,7 @@ protected int[] onCreateDrawableState(int extraSpace) {
     return drawableState;
 }
 {% endhighlight %}
-最后修改`setChecked`方法:
+最后修改`setChecked`方法, 添加`refreshDrawableState()`方法:
 {% highlight java %}
 @Override
 public void setChecked(boolean checked) {
