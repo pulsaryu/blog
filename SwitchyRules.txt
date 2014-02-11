@@ -18,6 +18,7 @@
 *://*.blogger.com/*
 *://*.git-scm.com/*
 *://*.sstatic.net/*
+*://*.appspot.com/*
 
 [regexp]
 
