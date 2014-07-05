@@ -19,6 +19,8 @@
 *://*.git-scm.com/*
 *://*.sstatic.net/*
 *://*.appspot.com/*
+*://shadowsocks.org/*
+*://*.shadowsocks.org/*
 
 [regexp]
 
