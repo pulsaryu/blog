@@ -21,6 +21,7 @@
 *://*.appspot.com/*
 *://shadowsocks.org/*
 *://*.shadowsocks.org/*
+*://*.android.com/*
 
 [regexp]
 
